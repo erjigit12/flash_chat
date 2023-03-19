@@ -4,17 +4,17 @@ import 'package:get/get.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp(
-    this.isRegister, {
+    this.isAuth, {
     super.key,
   });
-  final bool isRegister;
+  final bool isAuth;
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialRoute: isRegister ? AppPages.FLASH : AppPages.HOME,
+      initialRoute: isAuth ? AppPages.HOME : AppPages.FLASH,
       getPages: AppPages.routes,
     );
   }

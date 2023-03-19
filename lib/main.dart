@@ -9,6 +9,6 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  final isRegister = await userManage.init();
-  runApp(MyApp(isRegister));
+  final isAuth = await userManage.init();
+  runApp(MyApp(isAuth));
 }

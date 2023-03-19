@@ -8,7 +8,7 @@ class HomeService {
   }
 
   static Future<void> delete() async {
-    await FirebaseAuth.instance.currentUser!.delete();
+    await FirebaseAuth.instance.currentUser?.delete();
     await userManage.removeUid();
   }
 }
