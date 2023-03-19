@@ -19,7 +19,7 @@ class LoginView extends GetView<LoginController> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.appBarColor,
-          title: const Text('LoginView'),
+          title: isLogin ? const Text('Login') : const Text('Register'),
           centerTitle: true,
           elevation: 1,
         ),
