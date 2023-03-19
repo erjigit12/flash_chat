@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flash/src/modules/login/bindings/login_binding.dart';
 import 'package:flash/src/modules/login/views/login_view.dart';
 import 'package:get/get.dart';
@@ -17,7 +19,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => HomeView(),
+      page: () => const HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
