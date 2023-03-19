@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "184019483421",
+    "project_id": "flash-f507c",
+    "storage_bucket": "flash-f507c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184019483421:android:d858f8f5ded7b1169a3ff4",
+        "android_client_info": {
+          "package_name": "flash.flash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184019483421-tgdn2qb3h86f02337eb29jaa573t3rke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcDLmi2ljVU2uh2KtOVCf7zs6iLLynYHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184019483421-tgdn2qb3h86f02337eb29jaa573t3rke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
