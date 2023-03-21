@@ -4,6 +4,7 @@ import 'dart:developer';
 
 import 'package:flash/src/modules/login/service/login_service.dart';
 import 'package:flash/src/routes/app_pages.dart';
+import 'package:flash/src/service/user_manage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -27,6 +28,7 @@ class LoginController extends GetxController {
 
       Get.back();
       if (user != null) {
+        await userManage.setUid(user.user!.uid);
         await Get.offAllNamed(Routes.HOME);
       } else {
         AppDialog().alertDialog(
