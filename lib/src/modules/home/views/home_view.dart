@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../components/messages/send_message.dart';
+import '../../../components/messages/stream_message.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -29,6 +31,15 @@ class HomeView extends GetView<HomeController> {
                 child: const Text('Delete'),
               ),
             ],
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          StreamMessage(controller.steamMessage()),
+          SendMessage(
+            onPressed: () async => controller.sendMessage(),
+            controller.textController,
           ),
         ],
       ),
