@@ -17,12 +17,6 @@ class LoginView extends GetView<LoginController> {
     return Form(
       key: controller.formKey,
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: AppColors.appBarColor,
-          title: isLogin ? const Text('Login') : const Text('Register'),
-          centerTitle: true,
-          elevation: 1,
-        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

@@ -17,10 +17,6 @@ class FlashView extends GetView<FlashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
-        elevation: 1,
-      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
